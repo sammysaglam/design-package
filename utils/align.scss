@@ -1,0 +1,89 @@
+.horizontal-align {
+
+	&-children {
+
+		&-left {
+			display         : flex;
+			justify-content : flex-start;
+		}
+
+		&-center {
+			display         : flex;
+			justify-content : center;
+
+			&-space-around {
+				justify-content : space-around;
+			}
+
+			&-space-between {
+				justify-content : space-between;
+			}
+		}
+
+		&-right {
+			display         : flex;
+			justify-content : flex-end;
+		}
+	}
+
+	&-left {
+		text-align : left;
+	}
+
+	&-center {
+		text-align : center;
+	}
+
+	&-right {
+		text-align : right;
+	}
+}
+
+.vertical-align {
+
+	&-children {
+
+		&-top {
+			display     : flex;
+			align-items : flex-start;
+		}
+
+		&-middle {
+			display     : flex;
+			align-items : center;
+		}
+
+		&-bottom {
+			display     : flex;
+			align-items : flex-end;
+		}
+
+		&-baseline {
+			display     : flex;
+			align-items : baseline;
+		}
+	}
+
+	&-self {
+
+		&-auto {
+			align-self : auto;
+		}
+
+		&-top {
+			align-self : flex-start;
+		}
+
+		&-middle {
+			align-self : center;
+		}
+
+		&-bottom {
+			align-self : flex-end;
+		}
+
+		&-baseline {
+			align-self : baseline;
+		}
+	}
+}

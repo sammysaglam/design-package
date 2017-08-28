@@ -1,0 +1,84 @@
+@mixin magic-tiles-first-wrap-on($screen-with) {
+	@media screen and (max-width : $screen-with) {
+		> .left-tile {
+			width : 100%;
+		}
+
+		> .right-tile {
+			width : 50%;
+		}
+
+		> .right-tile.primary {
+			width : 100%;
+		}
+
+		> .right-tile.secondary {
+			width : 50%;
+		}
+	}
+}
+
+@mixin magic-tiles-second-wrap-on($screen-with) {
+	@media screen and (max-width : $screen-with) {
+		> .tile-item.right-tile,
+		> .tile-item.right-tile.primary,
+		> .tile-item.right-tile.secondary {
+			width : 100%;
+		}
+	}
+}
+
+@mixin magic-tiles($left-tile-width) {
+
+	&.first-wrap-on-mobile-landscape {
+		@include magic-tiles-first-wrap-on($mobile-landscape);
+	}
+	&.second-wrap-on-mobile-portrait {
+		@include magic-tiles-second-wrap-on($mobile-portrait);
+	}
+
+	.tile-item {
+		float      : left;
+		box-sizing : border-box;
+	}
+
+	.left-tile {
+		width : $left-tile-width;
+	}
+
+	&.with-two-columns > .right-tile {
+		width : 100% - $left-tile-width;
+	}
+	&.with-three-columns > .right-tile {
+		width : (100% - $left-tile-width)/2;
+	}
+
+}
+
+.magic-tiles.left-is-one-fifth {
+	@include magic-tiles(20%);
+}
+
+.magic-tiles.left-is-one-quarter {
+	@include magic-tiles(25%);
+}
+
+.magic-tiles.left-is-one-third {
+	@include magic-tiles(33.3%);
+}
+
+.magic-tiles.left-is-one-half {
+	@include magic-tiles(50%);
+}
+
+.magic-tiles.left-is-two-thirds {
+	@include magic-tiles(66.6%);
+}
+
+.magic-tiles.left-is-three-quarters {
+	@include magic-tiles(75%);
+}
+
+.magic-tiles.left-is-four-fifths {
+	@include magic-tiles(80%);
+}

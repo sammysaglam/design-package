@@ -1,0 +1,13 @@
+{
+	"name":"design-package" ,
+	"version":"1.0.0" ,
+	"description":"a very basic css framework" ,
+	"main":"style.scss" ,
+	"author":"Sammy Saglam" ,
+	"license":"MIT" ,
+	"repository":"https://github.com/sammysaglam/design-package" ,
+	"scripts":{
+		"watch":"sass --watch --sourcemap=none ./style.scss:../design_package.css" ,
+		"build":"sass --sourcemap=none ./style.scss:../design_package.css --style compressed"
+	}
+}

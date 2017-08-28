@@ -1,0 +1,199 @@
+.grid {
+	display    : flex;
+	box-sizing : border-box;
+
+	.column {
+		box-sizing : border-box;
+		flex-grow  : 1;
+		margin    : {
+			left  : 0 !important;
+			right : 0 !important;
+		}
+
+		&.is {
+			&-2 {
+				width : 2 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-3 {
+				width : 3 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-4 {
+				width : 4 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-5 {
+				width : 5 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-6 {
+				width : 6 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-7 {
+				width : 7 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-8 {
+				width : 8 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-9 {
+				width : 9 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-10 {
+				width : 10 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+
+			&-11 {
+				width : 11 * (100 / 12) * 1%;
+				@extend .is-x;
+			}
+		}
+
+		&.is-x {
+			flex-grow        : 0;
+			flex             : none;
+			flex-basis       : auto;
+			flex-shrink      : 0;
+			-webkit-box-flex : 0;
+		}
+	}
+
+	@media screen and (max-width : 567px) {
+		&.wrap-on-mobile {
+			display   : flex;
+			flex-wrap : wrap;
+			width     : 100%;
+		}
+
+		&.wrap-on-mobile > .column {
+			width : 100%;
+		}
+
+		&.wrap-on-mobile > .mobile-order {
+			&-1 {
+				order : 1;
+			}
+			&-2 {
+				order : 2;
+			}
+			&-3 {
+				order : 3;
+			}
+			&-4 {
+				order : 4;
+			}
+			&-5 {
+				order : 5;
+			}
+			&-6 {
+				order : 6;
+			}
+			&-7 {
+				order : 7;
+			}
+			&-8 {
+				order : 8;
+			}
+			&-9 {
+				order : 9;
+			}
+			&-10 {
+				order : 10;
+			}
+			&-11 {
+				order : 11;
+			}
+			&-12 {
+				order : 12;
+			}
+			&-13 {
+				order : 13;
+			}
+			&-14 {
+				order : 14;
+			}
+			&-15 {
+				order : 15;
+			}
+			&-16 {
+				order : 16;
+			}
+		}
+	}
+
+	@media screen and (max-width : 1023px) {
+		&.wrap-on-mobile-landscape {
+			display   : flex;
+			flex-wrap : wrap;
+			width     : 100%;
+		}
+
+		&.wrap-on-mobile-landscape > .column {
+			width : 100%;
+		}
+
+		&.wrap-on-mobile-landscape > .mobile-order {
+			&-1 {
+				order : 1;
+			}
+			&-2 {
+				order : 2;
+			}
+			&-3 {
+				order : 3;
+			}
+			&-4 {
+				order : 4;
+			}
+			&-5 {
+				order : 5;
+			}
+			&-6 {
+				order : 6;
+			}
+			&-7 {
+				order : 7;
+			}
+			&-8 {
+				order : 8;
+			}
+			&-9 {
+				order : 9;
+			}
+			&-10 {
+				order : 10;
+			}
+			&-11 {
+				order : 11;
+			}
+			&-12 {
+				order : 12;
+			}
+			&-13 {
+				order : 13;
+			}
+			&-14 {
+				order : 14;
+			}
+			&-15 {
+				order : 15;
+			}
+			&-16 {
+				order : 16;
+			}
+		}
+	}
+}

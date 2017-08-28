@@ -1,29 +1,34 @@
 @mixin magic-tiles-first-wrap-on($screen-with) {
-	@media screen and (max-width : $screen-with) {
-		> .left-tile {
-			width : 100%;
-		}
+	&.magic-tiles {
+		@media screen and (max-width : $screen-with) {
+			> .left-tile {
+				width : 100%;
+			}
 
-		> .right-tile {
-			width : 50%;
-		}
+			> .right-tile {
+				width : 50%;
+			}
 
-		> .right-tile.primary {
-			width : 100%;
-		}
+			> .right-tile.primary {
+				width : 100%;
+			}
 
-		> .right-tile.secondary {
-			width : 50%;
+			> .right-tile.secondary {
+				width : 50%;
+			}
 		}
 	}
 }
 
 @mixin magic-tiles-second-wrap-on($screen-with) {
-	@media screen and (max-width : $screen-with) {
-		> .tile-item.right-tile,
-		> .tile-item.right-tile.primary,
-		> .tile-item.right-tile.secondary {
-			width : 100%;
+	&.magic-tiles {
+		@media screen and (max-width : $screen-with) {
+			> .tile-item.left-tile,
+			> .tile-item.right-tile,
+			> .tile-item.right-tile.primary,
+			> .tile-item.right-tile.secondary {
+				width : 100%;
+			}
 		}
 	}
 }

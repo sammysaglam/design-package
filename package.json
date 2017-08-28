@@ -1,6 +1,6 @@
 {
 	"name":"design-package" ,
-	"version":"1.0.0" ,
+	"version":"1.0.1" ,
 	"description":"a very basic css framework" ,
 	"main":"style.scss" ,
 	"author":"Sammy Saglam" ,
